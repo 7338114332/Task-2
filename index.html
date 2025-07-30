@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+
+<nav>
+    <div class="logo">MySite</div>
+    <ul>
+      <li><a href="#" style="color: black;">Home</a></li>
+      <li><a href="#" style="color: black;">About</a></li>
+      <li><a href="#" style="color: black;">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="grid-container">
+    <div class="box">Content Box 1</div>
+    <div class="box">Content Box 2</div>
+    <div class="box">Content Box 3</div>
+  </div>
+
+  <div class="contact-form">
+    <h2>Contact Us</h2>
+    <form id="form">
+      <div class="form-group">
+        <label for="name">Name *</label>
+        <input type="text" id="name" required />
+        <div class="error" id="nameError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email *</label>
+        <input type="email" id="email" required />
+        <div class="error" id="emailError"></div>
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message *</label>
+        <textarea id="message" rows="4" maxlength="300"></textarea>
+        <div class="error" id="messageError"></div>
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <br>
+  <br>
+
+   <div class="todo-container">
+    <h2>To-Do List</h2>
+    <input type="text" id="taskInput" placeholder="Add a new task..." />
+    <button onclick="addTask()">Add</button>
+    <ul id="taskList"></ul>
+  </div>
+
+  
+<script src="script.js"></script>
+</body>
+
+</html>
